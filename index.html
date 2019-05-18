@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>百度主页</title>
+</head>
+<style>
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        margin-top: 20px;
+        margin-right: 2px;
+    }
+    .header ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .header ul li{
+        margin: 0 10px;
+    }
+
+    .header ul li a{
+        color: rgba(0, 0, 0, 0.86);
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+    .button {
+        background: #3580fc;
+        border: none;
+        color: white;
+        font-size: 13px;
+        height: 23px;
+        padding: 0 4px;
+        margin-left: 5px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image{
+        margin-top: 57px;
+    }
+
+    .search {
+        height: 35px;
+        margin-top: 20px;
+    }
+
+    .search form{
+        font-size: 0;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .searchinput{
+        width: 535px;
+        margin: 0;
+        padding: 0;
+        height: 35px;
+        display: block;
+        background: url("./images/相机.png")  no-repeat 500px 7px;
+        background-size: 27px 20px;
+        border: 1px solid #cecece;
+    }
+
+    .pointButton{
+        background: #3580fc;
+        border: none;
+        color: white;
+        font-size: 15px;
+        padding: 0 4px;
+        height:35px;
+        width: 100px;
+        margin: 0;
+        display: block;
+    }
+
+    .footer{
+        margin-top: 275px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .imagedown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagedown p{
+        margin-top: 5px;
+        font-size: 12px;
+       font-weight: bold;
+        color: #545454;
+    }
+
+    .textdown{
+        font-size: 12px;
+        color: #a7a7a7;
+        margin-top: 10px;
+    }
+
+    .textdown a{
+        color: #a7a7a7;
+        margin: 0 10px;
+    }
+</style>
+<body>
+
+<header>
+
+    <div class="header">
+        <ul>
+            <li>
+                <a href="http://news.baidu.com">新闻</a>
+            </li>
+            <li>
+                <a href="https://www.hao123.com">hao123</a>
+            </li>
+            <li>
+                <a href="http://map.baidu.com">地图</a>
+            </li>
+            <li>
+                <a href="http://v.baidu.com">视频</a>
+            </li>
+            <li>
+                <a href="http://tieba.baidu.com">贴吧</a>
+            </li>
+            <li>
+                <a href="http://xueshu.baidu.com">学术</a>
+            </li>
+            <li>
+                <a style="font-weight: normal;  font-size: 12px;"
+                   href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F&amp;sms=5"
+                >
+                    登录
+                </a>
+            </li>
+            <li>
+                <a style="font-weight: normal;  font-size: 12px;"
+                   href="http://www.baidu.com/gaoji/preferences.html"
+                >
+                    设置
+                </a>
+            </li>
+            <li>
+                <button class="button" type="button">更多产品</button>
+            </li>
+        </ul>
+    </div>
+
+</header>
+
+<main>
+
+<div class="main">
+
+    <div class="image">
+    <a href="https://www.baidu.com/s?wd=%E5%9B%BD%E9%99%85%E5%8D%9A%E7%89%A9%E9%A6%86%E6%97%A5&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs" 
+       title="穿越时光 闳览博物"
+       target="_blank"
+    >
+      <img src="./images/主页.gif" alt="没有了" width="270" height="129">
+    </a>
+    </div>
+
+    <div class="search">
+        <form>
+            <div class="photo">
+
+            </div>
+            <input class="searchinput" type="search" maxlength="100">
+            <button type="button" class="pointButton">百度一下</button>
+        </form>
+    </div>
+</div>
+
+</main>
+
+<footer>
+    <div class="footer">
+
+        <div class="imagedown">
+            <img src="./images/二维码.png" alt="没有了" width="60" height="60">
+            <p>百度</p>
+        </div>
+
+        <div class="textdown">
+            <a id="setf" href="//www.baidu.com/cache/sethelp/help.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">把百度设为主页</a>
+            <a href="http://home.baidu.com">关于百度</a>
+            <a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+            <a href="http://e.baidu.com/?refer=888">百度推广</a>
+        </div>
+
+        <div class="textdown">
+            ©2019&nbsp;Baidu&nbsp;
+            <a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;
+            <a href="http://jianyi.baidu.com/" class="cp-feedback">意见反馈</a>
+            &nbsp;京ICP证030173号&nbsp;
+            <i class="c-icon-icrlogo"></i>
+            &nbsp;
+            <a id="jgwab" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+            &nbsp;
+            <i class="c-icon-jgwablogo"></i>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
